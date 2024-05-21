@@ -47,17 +47,17 @@ export default function TextForm(props) {
     return (
         <>
         <div className='container' style={{color:props.mode===`light`?`black`:`white`}}>
-            <h1>{props.heading}</h1>
+            <h3>{props.heading}</h3>
 
             <div className="form-group">
-                <textarea className="form-control" value={text} onChange={handleOnChange}  style={{backgroundColor:props.mode===`light`?`white`:`#9b9999`,color:props.mode===`light`?`black`:`white`}} id="my-box" rows="10"></textarea>
+                <textarea className="form-control" value={text} onChange={handleOnChange}  style={{backgroundColor:props.mode===`light`?`white`:`#9b9999`,color:props.mode===`light`?`black`:`white`}} id="my-box" rows="6"></textarea>
             </div>
 
-            <button type="submit" className="btn btn-primary mx-1" onClick={handleUpChange}>Convet to Uppercase</button>
-            <button type="submit" className="btn btn-primary mx-1" onClick={handleLoChange}>Convet to Uppercase</button>
-            <button type="submit" className="btn btn-primary mx-1" onClick={handleClearClick}>Clear all</button>
-            <button type="submit" className="btn btn-primary mx-1" onClick={handleCopyClick}>Copy Text</button>
-            <button type="submit" className="btn btn-primary mx-1" onClick={handleExtraSpace}>Clear Extra Space</button>
+            <button type="submit" className="btn btn-primary mx-1 my-3" onClick={handleUpChange}>Convet to Uppercase</button>
+            <button type="submit" className="btn btn-primary mx-3 my-3" onClick={handleClearClick}>Clear all</button>
+            <button type="submit" className="btn btn-primary mx-1 my-3" onClick={handleLoChange}>Convet to Uppercase</button>
+            <button type="submit" className="btn btn-primary mx-3 my-3" onClick={handleCopyClick}>Copy Text</button>
+            <button type="submit" className="btn btn-primary mx-1 my-3" onClick={handleExtraSpace}>Clear Extra Space</button>
             {/* <button type="submit" className="btn btn-primary mx-1" onClick={handlePasteClick}>paste</button> */}
 
         </div>
